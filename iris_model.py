@@ -38,8 +38,10 @@ if __name__=="__main__":
     x_train,x_test,y_train,y_test=split_dataset(df)
     model=train_model(x_train,y_train)
     accuracy,cm=model_inference(model,x_test,y_test)
+    accuracy=str(accuracy)
+    print(f'Accuracy of the Model : {accuracy}')
     with open("metrics.txt","w") as fp:
-        fp.write(str(accuracy))
+        fp.write(accuracy)
 
 
 
