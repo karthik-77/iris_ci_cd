@@ -9,7 +9,7 @@ jobs:
         with:
           ref: ${{ github.event.pull_request.head.sha }}
         env:
-          CML_TOKEN: ${{ secrets.CML_TOKEN }} # Update the environment variable name
+          CML_TOKEN: ${{ secrets.CML_TOKEN }}
       - run: |
           pip install -r requirements.txt
           python iris_model.py
