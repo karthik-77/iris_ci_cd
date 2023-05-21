@@ -8,6 +8,8 @@ jobs:
       - uses: actions/checkout@v3
         with:
           ref: ${{ github.event.pull_request.head.sha }}
+        env:
+          CML_GITHUB_TOKEN: ${{ secrets.cml_token }}
       - run: |
           pip install -r requirements.txt
           python iris_model.py
