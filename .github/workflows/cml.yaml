@@ -9,12 +9,11 @@ jobs:
         with:
           ref: ${{ github.event.pull_request.head.sha }}
         env:
-          CML_GITHUB_TOKEN: ${{ secrets.CML_TOKEN }}
+          CML_TOKEN: ${{ secrets.CML_TOKEN }} # Update the environment variable name
       - run: |
           pip install -r requirements.txt
           python iris_model.py
           echo "## Model Metrics" > report.md
           cat metrics.txt >> report.md
           cml-send-comment report.md
-   
        
