@@ -1,9 +1,9 @@
 import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import accuracy_score,confusion_matrix,ConfusionMatrixDisplay
+from sklearn.metrics import accuracy_score,confusion_matrix
 from sklearn.model_selection import train_test_split
 from sklearn.datasets import load_iris
-from matplotlib import pyplot as plt
+
 
 
 def download_dataset():
@@ -27,8 +27,8 @@ def model_inference(model,x_test,y_test):
     y_pred=model.predict(x_test)
     accuracy=accuracy_score(y_test,y_pred)
     cm=confusion_matrix(y_test,y_pred)
-    disp = ConfusionMatrixDisplay.from_predictions(y_test, y_pred, normalize="true", cmap=plt.cm.Blues)
-    plt.savefig("plot.png")
+    # disp = ConfusionMatrixDisplay.from_predictions(y_test, y_pred, normalize="true", cmap=plt.cm.Blues)
+    # plt.savefig("plot.png")
     return accuracy,cm
 
 

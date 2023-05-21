@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f1c8f3ab-054a-4057-be42-27cc788ce7ab" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/cml.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/cml.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iris_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/iris_model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />

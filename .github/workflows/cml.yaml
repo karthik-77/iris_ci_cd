@@ -14,7 +14,6 @@ jobs:
           cat metrics.txt >> report.md
           echo '![](./plot.png "Confusion Matrix")' >> report.md
           cml comment create report.md
-        env:
-            REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    
    
        
