@@ -21,4 +21,5 @@ jobs:
           cat metrics.txt >> report.md
           cml comment create report.md
           cml pr create report.md
+          cml-send-report report.md
        
