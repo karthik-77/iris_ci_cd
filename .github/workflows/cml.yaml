@@ -19,7 +19,8 @@ jobs:
         run: |
           echo "## Model Metrics" > report.md
           cat metrics.txt >> report.md
+          echo '![](./plot.png "Confusion Matrix")' >> report.md
           cml comment create report.md
-          cml pr create report.md
-          cml-send-report report.md
+          
+         
        
