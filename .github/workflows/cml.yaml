@@ -1,4 +1,4 @@
-name: iris-ci-cd
+name: iris-training
 on: [push]
 jobs:
   train-and-report:
