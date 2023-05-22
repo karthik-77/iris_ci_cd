@@ -1,5 +1,5 @@
 name: iris-training
-on: [push]
+on: [push, pull_request]
 jobs:
   train-and-report:
     runs-on: ubuntu-latest
